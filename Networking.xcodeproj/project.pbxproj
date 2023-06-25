@@ -11,6 +11,8 @@
 		B57814192A21345700BCFF7F /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B578140E2A21345700BCFF7F /* Networking.framework */; };
 		B578141E2A21345700BCFF7F /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B578141D2A21345700BCFF7F /* NetworkingTests.swift */; };
 		B578141F2A21345700BCFF7F /* Networking.h in Headers */ = {isa = PBXBuildFile; fileRef = B57814112A21345700BCFF7F /* Networking.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B57814602A213FF700BCFF7F /* AnimalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B578145E2A213FF700BCFF7F /* AnimalData.swift */; };
+		B57814612A213FF700BCFF7F /* AnimalsNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B578145F2A213FF700BCFF7F /* AnimalsNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B57814122A21345700BCFF7F /* Networking.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = Networking.docc; sourceTree = "<group>"; };
 		B57814182A21345700BCFF7F /* NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B578141D2A21345700BCFF7F /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		B578145E2A213FF700BCFF7F /* AnimalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalData.swift; sourceTree = "<group>"; };
+		B578145F2A213FF700BCFF7F /* AnimalsNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +76,8 @@
 			isa = PBXGroup;
 			children = (
 				B57814112A21345700BCFF7F /* Networking.h */,
+				B578145E2A213FF700BCFF7F /* AnimalData.swift */,
+				B578145F2A213FF700BCFF7F /* AnimalsNetworking.swift */,
 				B57814122A21345700BCFF7F /* Networking.docc */,
 			);
 			path = Networking;
@@ -194,7 +200,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B57814602A213FF700BCFF7F /* AnimalData.swift in Sources */,
 				B57814132A21345700BCFF7F /* Networking.docc in Sources */,
+				B57814612A213FF700BCFF7F /* AnimalsNetworking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,10 +348,15 @@
 		B57814232A21345700BCFF7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VNU8KKW4GG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = VNU8KKW4GG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -361,6 +374,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -371,10 +385,15 @@
 		B57814242A21345700BCFF7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = NO;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = VNU8KKW4GG;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = VNU8KKW4GG;
+				"DEVELOPMENT_TEAM[sdk=macosx*]" = VNU8KKW4GG;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -392,6 +411,7 @@
 				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu11 gnu++20";
 				PRODUCT_BUNDLE_IDENTIFIER = ua.edu.ukma.derkach.Networking;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -402,6 +422,7 @@
 		B57814262A21345700BCFF7F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VNU8KKW4GG;
@@ -418,6 +439,7 @@
 		B57814272A21345700BCFF7F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = VNU8KKW4GG;
